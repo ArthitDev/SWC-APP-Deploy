@@ -26,7 +26,7 @@ const queryClient = new QueryClient();
 const prompt = Prompt({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  display: "swap",
+  display: 'swap',
 });
 
 type MyAppProps = AppProps & {
