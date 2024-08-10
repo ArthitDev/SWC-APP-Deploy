@@ -74,8 +74,8 @@ const LandingPage: React.FC = () => {
             fullWidth
             text="เริ่มต้นใช้งาน"
             sx={{
-              fontWeight: 'regular',
-              fontSize: '22px',
+              fontWeight: 'bold',
+              fontSize: '20px',
               mt: 5,
               mb: 2,
               p: 3,
