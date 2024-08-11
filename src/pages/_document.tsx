@@ -30,7 +30,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Smart Wound Care - วินิจฉัยและให้คำแนะนำในการดูแลรักษาแผลด้วย AI อัจฉริยะ"
           />
-          <meta property="og:url" content="https://www.swcwebapp.com" />
+          <meta property="og:url" content="https://swc-app-deploy.vercel.app/" />
           <meta property="og:image" content="/images/og-image.png" />
           <meta property="og:type" content="website" />
         </Head>
