@@ -25,6 +25,7 @@ const COLORS = {
     8: '#48484A',
     9: '#D1D1D6',
     10: '#3A3A3C',
+    11: '#5A5858',
   },
   blue: {
     0: '#E5E5EA',
@@ -47,6 +48,12 @@ const COLORS = {
     4: '#ffd132',
     5: 'rgba(255, 149, 0, 1)',
     6: '#FF9500',
+  },
+  yellow: {
+    1: '#fff3cc',
+    2: '#ffe899',
+    3: '#ffdc66',
+    4: '#ffd132',
   },
   transparent: {
     1: 'rgba(0,0,0,0.1)',
