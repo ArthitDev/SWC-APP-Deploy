@@ -1,12 +1,12 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box, Button, Card, Typography } from '@mui/material';
 import useRandomTrick from 'hooks/useRandomTrick';
-import router from 'next/router'; // นำเข้า useRouter จาก Next.js
+import router from 'next/router';
 import React from 'react';
 import HomeCardError from 'utils/HomeCardError';
 import HomeCardLoading from 'utils/HomeCardLoading';
 
-const TrickCard: React.FC = () => {
+const TrickCardHome: React.FC = () => {
   const { data, isLoading, error } = useRandomTrick();
 
   if (isLoading)
@@ -114,4 +114,4 @@ const TrickCard: React.FC = () => {
   );
 };
 
-export default TrickCard;
+export default TrickCardHome;

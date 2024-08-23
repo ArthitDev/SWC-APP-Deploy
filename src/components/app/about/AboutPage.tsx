@@ -13,18 +13,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import COLORS from 'theme/colors';
 import BackButtonPage from 'utils/BackButtonPage';
-
-const fadeInVariants = {
-  initial: { opacity: 0 },
-  in: { opacity: 1 },
-  out: { opacity: 0 },
-};
-
-const fadeInTransition = {
-  type: 'tween',
-  ease: 'anticipate',
-  duration: 0.3,
-};
+import { fadeInTransition, fadeInVariants } from 'utils/pageTransition';
 
 const AboutPage: React.FC = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -45,7 +34,7 @@ const AboutPage: React.FC = () => {
     >
       <BackButtonPage label="กลับ" />
       <Container maxWidth="sm">
-        <Box sx={{ mt: 10 }}>
+        <Box>
           <Typography
             variant="h4"
             component="h1"

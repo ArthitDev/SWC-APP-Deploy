@@ -51,10 +51,7 @@ const ArticleForm: React.FC<ArticleFormProps> = ({ onClose }) => {
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreviewImage(reader.result as string);
-
-        // Convert the File to a string and set it
-        const base64File = reader.result as string;
-        setValue('article_cover', base64File);
+        setValue('article_cover', file);
       };
       reader.readAsDataURL(file);
     }

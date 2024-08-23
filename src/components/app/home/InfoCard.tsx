@@ -8,7 +8,7 @@ const InfoCard: React.FC<{
   buttonText: string;
   buttonIcon?: React.ReactNode;
   onButtonClick?: () => void;
-  sxDescription?: object; // เพิ่ม props สำหรับ sx ของ description
+  sxDescription?: object;
 }> = ({
   title,
   description,

@@ -34,7 +34,6 @@ class MyDocument extends Document {
             property="og:url"
             content="https://www.swc-application.vercel.com"
           />
-          <meta property="og:url" content="https://swc-app-deploy.vercel.app" />
           <meta property="og:image" content="/images/og-image.png" />
           <meta property="og:type" content="website" />
         </Head>

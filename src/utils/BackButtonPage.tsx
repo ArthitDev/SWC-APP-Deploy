@@ -1,5 +1,5 @@
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Button, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -27,25 +27,37 @@ const BackButtonPage: React.FC<BackButtonPageProps> = ({
   };
 
   return (
-    <Button
-      onClick={handleBackClick}
-      color="primary"
+    <Box
       sx={{
-        textTransform: 'none',
-        position: 'absolute',
-        top: 16,
-        left: 16,
-        zIndex: 1000,
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
+        position: 'relative',
+        width: '100%',
+        height: '60px',
+        marginBottom: '16px',
       }}
     >
-      <ArrowBackIcon sx={{ fontSize: '1.7rem' }} />
-      <Typography variant="body1" sx={{ fontSize: '1.5rem' }}>
-        {label}
-      </Typography>
-    </Button>
+      <Button
+        onClick={handleBackClick}
+        color="primary"
+        sx={{
+          textTransform: 'none',
+          position: 'absolute',
+          top: 16,
+          left: 16,
+          zIndex: 1000,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+        }}
+      >
+        <ArrowBackIcon sx={{ fontSize: '1.7rem' }} />
+        <Typography
+          variant="body1"
+          sx={{ fontSize: '1.5rem', fontWeight: '500' }}
+        >
+          {label}
+        </Typography>
+      </Button>
+    </Box>
   );
 };
 

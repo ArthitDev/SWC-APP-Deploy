@@ -6,11 +6,11 @@ import React from 'react';
 import HomeCardError from 'utils/HomeCardError';
 import HomeCardLoading from 'utils/HomeCardLoading';
 
-const DidyouknowCard: React.FC = () => {
+const DidyouknowCardHome: React.FC = () => {
   const { data, isLoading, error } = useRandomDidYouKnow();
 
   const handleViewMore = () => {
-    router.push('/app/trick');
+    router.push('/app/didyouknow');
   };
 
   if (isLoading)
@@ -43,7 +43,7 @@ const DidyouknowCard: React.FC = () => {
         maxWidth: 500,
         boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
         overflow: 'hidden',
-        marginBottom: 4,
+        marginBottom: 2,
       }}
     >
       <Box
@@ -111,4 +111,4 @@ const DidyouknowCard: React.FC = () => {
   );
 };
 
-export default DidyouknowCard;
+export default DidyouknowCardHome;
